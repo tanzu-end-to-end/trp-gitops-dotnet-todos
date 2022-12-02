@@ -9,7 +9,7 @@ metadata:
     app.kubernetes.io/part-of: dotnet-todos-app
     apps.tanzu.vmware.com/has-tests: "true"
     apps.tanzu.vmware.com/workload-type: web
-    kapp.k14s.io/app: "1667248713819291429"
+    kapp.k14s.io/app: "1668882806529382678"
     kapp.k14s.io/association: v1.4623672940223fad09b1b51d9d24cfd9
     app.kubernetes.io/component: run
     carto.run/workload-name: dotnet-todos-app
@@ -21,7 +21,7 @@ spec:
         conventions.carto.run/applied-conventions: appliveview-sample/app-live-view-appflavour-check
         developer.conventions/target-containers: workload
         kapp.k14s.io/identity: v1;dotnet-todos/carto.run/Workload/dotnet-todos-app;carto.run/v1alpha1
-        kapp.k14s.io/original: '{"apiVersion":"carto.run/v1alpha1","kind":"Workload","metadata":{"labels":{"app.kubernetes.io/part-of":"dotnet-todos-app","apps.tanzu.vmware.com/has-tests":"true","apps.tanzu.vmware.com/workload-type":"web","kapp.k14s.io/app":"1667248713819291429","kapp.k14s.io/association":"v1.4623672940223fad09b1b51d9d24cfd9"},"name":"dotnet-todos-app","namespace":"dotnet-todos"},"spec":{"build":{"env":[{"name":"BP_NODE_RUN_SCRIPTS","value":"build"},{"name":"BP_WEB_SERVER","value":"nginx"},{"name":"BP_WEB_SERVER_ROOT","value":"dist"}]},"params":[{"name":"annotations","value":{"autoscaling.knative.dev/minScale":"1"}},{"name":"gitops_repository_name","value":"trp-gitops-dotnet-todos"},{"name":"clusterBuilder","value":"full"}],"source":{"git":{"ref":{"branch":"main"},"url":"https://github.com/tanzu-end-to-end/trp-dotnet-employee-todo-list-app.git"}}}}'
+        kapp.k14s.io/original: '{"apiVersion":"carto.run/v1alpha1","kind":"Workload","metadata":{"labels":{"app.kubernetes.io/part-of":"dotnet-todos-app","apps.tanzu.vmware.com/has-tests":"true","apps.tanzu.vmware.com/workload-type":"web","kapp.k14s.io/app":"1668882806529382678","kapp.k14s.io/association":"v1.4623672940223fad09b1b51d9d24cfd9"},"name":"dotnet-todos-app","namespace":"dotnet-todos"},"spec":{"build":{"env":[{"name":"BP_NODE_RUN_SCRIPTS","value":"build"},{"name":"BP_WEB_SERVER","value":"nginx"},{"name":"BP_WEB_SERVER_ROOT","value":"dist"}]},"params":[{"name":"annotations","value":{"autoscaling.knative.dev/minScale":"1"}},{"name":"gitops_repository_name","value":"trp-gitops-dotnet-todos"},{"name":"clusterBuilder","value":"full"}],"source":{"git":{"ref":{"branch":"main"},"url":"https://github.com/tanzu-end-to-end/trp-dotnet-employee-todo-list-app.git"}}}}'
         kapp.k14s.io/original-diff-md5: c6e94dc94aed3401b5d0f26ed6c0bff3
       labels:
         app.kubernetes.io/component: run
@@ -29,11 +29,11 @@ spec:
         apps.tanzu.vmware.com/has-tests: "true"
         apps.tanzu.vmware.com/workload-type: web
         carto.run/workload-name: dotnet-todos-app
-        kapp.k14s.io/app: "1667248713819291429"
+        kapp.k14s.io/app: "1668882806529382678"
         kapp.k14s.io/association: v1.4623672940223fad09b1b51d9d24cfd9
     spec:
       containers:
-      - image: registry.gcp.ellin.net/tap/sc/dotnet-todos-app-dotnet-todos@sha256:3f29d6aae80e21a3518ec8e9f92bd35f4dfa24f279695c14120c07d75d4f557b
+      - image: registry.gcp.ellin.net/tap/sc/dotnet-todos-app-dotnet-todos@sha256:b1791891018a109c679dc120bb9c11335bfdcacf50288e2f5cae2ca854792590
         name: workload
         resources: {}
         securityContext:
